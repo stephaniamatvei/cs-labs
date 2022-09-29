@@ -10,9 +10,9 @@
 * [Theory](#theory)
 * [Objectives](#objectives)
 * [Implementation Description](#implementation-description)
-  * [1. Caesar Cipher](#1.-caesar-cipher)
-  * [2. Caesar with Permutation Cipher](#2.-caesar-with-permutation-cipher)
-  * [3. Playfair Cipher](#3.-playfair-cipher)
+  * [1. Caesar Cipher](#1-caesar-cipher)
+  * [2. Caesar with Permutation Cipher](#2-caesar-with-permutation-cipher)
+  * [3. Playfair Cipher](#3-playfair-cipher)
   * [4. Vigenere Cipher](#4-vigenere-cipher)
 * [Conclusions](#conclusions)
 

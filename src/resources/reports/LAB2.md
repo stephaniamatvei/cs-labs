@@ -1,6 +1,5 @@
 # Lab Nr.2 - Symmetric Ciphers. Stream Ciphers. Block Ciphers.
 
-
 ## Table of Contents
 
 * [Theory](#theory)

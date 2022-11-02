@@ -32,6 +32,6 @@
 
 ## Laboratory Works
 
-* [Lab 1 - Intro to Cryptography. Classical Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab1)
-* [Lab 2 - Symmetric Ciphers. Stream Ciphers. Block Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab2)
-* [Lab 3 - Asymmetric Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab3)
+* [Lab 1 - Intro to Cryptography. Classical Ciphers.](https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab1)
+* [Lab 2 - Symmetric Ciphers. Stream Ciphers. Block Ciphers.](https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab2)
+* [Lab 3 - Asymmetric Ciphers.](https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab3)

@@ -18,8 +18,7 @@
 
 * [Introduction](#introduction)
 * [Bibliographical Resources](#bibliographical-resources)
-* [Laboratory Works Tasks](#laboratory-works-tasks)
-  * [Lab 1 - Intro to Cryptography. Classical ciphers.](#lab-1---intro-to-cryptography.-classical-ciphers.)
+* [Laboratory Works](#laboratory-works)
 
 ## Introduction
 
@@ -31,13 +30,8 @@
 - [А. Саломаа - "Кpиптогpафия с откpытым ключом"](https://fis.tntu.edu.ua/data/elibrary/3/open_key_crypt.pdf)
 - [Jonathan Katz, Yehuda Lindell - "Introduction to Modern Cryptography", 2-nd ed.](https://eclass.uniwa.gr/modules/document/file.php/CSCYB105/Reading%20Material/%5BJonathan_Katz%2C_Yehuda_Lindell%5D_Introduction_to_Mo%282nd%29.pdf)
 
-## Laboratory Works Tasks
+## Laboratory Works
 
-### Lab 1 - Intro to Cryptography. Classical ciphers.
-1. Get familiar with the basics of cryptography and classical ciphers.
-
-2. Implement 4 types of the classical ciphers:
-    - Caesar cipher with one key used for substitution (as explained above),
-    - Caesar cipher with one key used for substitution, and a permutation of the alphabet,
-    - Vigenere cipher,
-    - Playfair cipher.
+* [Lab 1 - Intro to Cryptography. Classical Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab1)
+* [Lab 2 - Symmetric Ciphers. Stream Ciphers. Block Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab2)
+* [Lab 3 - Asymmetric Ciphers.](#https://github.com/stephaniamatvei/cs-labs/tree/master/src/com/utm/cs/labs/lab3)

@@ -2,23 +2,6 @@ package com.utm.cs.labs.ciphers.symmetric.stream;
 
 import java.util.Arrays;
 
-/**
- * Rabbit stream cipher implementation.
- * @link http://tools.ietf.org/rfc/rfc4503.txt
- * Currently IV usage not implemented.
- *
- * Usage:
- *
- *  byte[] msg = "Hello World!".getBytes();
- *
- *  RabbitCipher cipher = new RabbitCipher();
- *  cipher.setupKey(key);
- *  cipher.crypt(msg);
- *
- *
- * Created by Nikita Timofeev on 20.04.15.
- */
-
 public class Rabbit {
 
     private final static int[] A = {
@@ -38,10 +21,6 @@ public class Rabbit {
 
     private static final int BLOCK_LENGTH = 16;
 
-    /**
-     * Original byte array used to return encrypted bytes
-     * @param message (encrypted) message to be (de-)encrypted
-     */
     public void crypt(byte[] message) {
         if(!ready) {
             throw new IllegalStateException("Key is not setup. You need to call setupKey() prior encrypting data.");
@@ -55,9 +34,6 @@ public class Rabbit {
         }
     }
 
-    /**
-     * @param key 128 bit key (16 bytes)
-     */
     public void setupKey(byte[] key) {
         assert key.length >= BLOCK_LENGTH;
 
@@ -88,23 +64,6 @@ public class Rabbit {
         ready = true;
     }
 
-    public void setupIV(byte[] IV) {
-        // TODO
-        /*
-        C0 = C0 ^ IV[31..0]
-        C1 = C1 ^ (IV[63..48] || IV[31..16])
-        C2 = C2 ^ IV[63..32]
-        C3 = C3 ^ (IV[47..32] || IV[15..0])
-        C4 = C4 ^ IV[31..0]
-        C5 = C5 ^ (IV[63..48] || IV[31..16])
-        C6 = C6 ^ IV[63..32]
-        C7 = C7 ^ (IV[47..32] || IV[15..0])
-        */
-    }
-
-    /**
-     * After reset key must be setup again
-     */
     public void reset() {
         Arrays.fill(X, 0);
         Arrays.fill(C, 0);
@@ -113,9 +72,6 @@ public class Rabbit {
         ready = false;
     }
 
-    /**
-     * Package private access for tests
-     */
     public byte[] nextBlock() {
         nextState();
 
@@ -182,12 +138,6 @@ public class Rabbit {
         return (int)(square ^ square >>> 32);
     }
 
-    /**
-     * Left circular bit shift
-     * @param value
-     * @param shift
-     * @return
-     */
     static private int rotate(int value, int shift) {
         return value << shift | value >>> (32 - shift);
     }

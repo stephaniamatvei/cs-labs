@@ -30,14 +30,15 @@ public class DigitalSignature {
         return hexString.toString();
     }
 
-    public static String encryptMessageDigest(String messageDigest) {
-        RSA rsa = new RSA(1024);
-        return rsa.encrypt(messageDigest);
-    }
+//    public static String encryptMessageDigest(String messageDigest) {
+//        RSA rsa = new RSA(1024);
+//        return rsa.encrypt(messageDigest);
+//    }
 
-    public static String decryptMessageDigest(StringBuilder encryptedMessageDigest) {
+    public static String decryptMessageDigest(String messageDigest) {
         RSA rsa = new RSA(1024);
-        return rsa.decrypt(encryptedMessageDigest);
+        String encryptedMessageDigest = rsa.encrypt(messageDigest);
+        return rsa.decrypt(new StringBuilder(encryptedMessageDigest));
     }
 
     public static void digitalSignatureCheck(String messageDigest, String decryptedMessage) {

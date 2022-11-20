@@ -15,12 +15,11 @@ public class Main {
             String message = scanner.nextLine();
 
             String messageDigest = toHexString(getSHA(message));
-            String encryptedMessageDigest = encryptMessageDigest(messageDigest);
-            String decryptedMessageDigest = decryptMessageDigest(new StringBuilder(encryptedMessageDigest));
+            String decryptedMessageDigest = decryptMessageDigest(messageDigest);
 
             System.out.println("\n1. Hash code for " + message + ": " + messageDigest);
             System.out.println("2. Encrypting the message digest (hash code) using RSA implementation from lab 3 ...");
-            System.out.println("3. Decrypted message digest using RSA implementation from lab 3: "
+            System.out.println("3. Decrypted message digest using RSA implementation from lab 3: \n"
                     + decryptedMessageDigest);
 
             digitalSignatureCheck(messageDigest, decryptedMessageDigest);
